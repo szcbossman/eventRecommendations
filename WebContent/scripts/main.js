@@ -18,7 +18,7 @@
     $('fav-btn').addEventListener('click', loadFavoriteItems);
     $('recommend-btn').addEventListener('click', loadRecommendedItems);
 
-    //validateSession(); //need to be implemented in mongoDB
+    //validateSession(); 
 
     onSessionValid({
     user_id : '1111',
@@ -413,7 +413,7 @@
     // successful callback
     function(res) {
       var result = JSON.parse(res);
-      if (result.status === 'OK') {
+      if (result.result === 'SUCCESS') {
         li.dataset.favorite = favorite;
         favIcon.className = favorite ? 'fa fa-heart' : 'fa fa-heart-o';
       }
