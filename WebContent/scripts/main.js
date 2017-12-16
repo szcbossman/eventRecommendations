@@ -18,12 +18,12 @@
     $('fav-btn').addEventListener('click', loadFavoriteItems);
     $('recommend-btn').addEventListener('click', loadRecommendedItems);
 
-    //validateSession(); 
+    validateSession(); 
 
-    onSessionValid({
-    user_id : '1111',
-    name : 'John Smith'
-    });
+    //onSessionValid({
+    //user_id : '1111',
+    //name : 'John Smith'
+    //});
   }
 
   /**
